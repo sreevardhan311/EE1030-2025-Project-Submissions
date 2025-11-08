@@ -1,0 +1,16 @@
+\begin{table}[H]
+\centering
+\caption{Comparison of different SVD algorithms}
+\label{tab:svd_comparison}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Algorithm} & \textbf{Complexity} & \textbf{Memory Usage} & \textbf{Accuracy} & \textbf{Suitable For} \\ \hline
+Jacobi Method & $O(n^3)$ & High & Very High & Small dense matrices \\ \hline
+Golub--Reinsch & $O(mn^2)$ & Moderate & High & General dense matrices \\ \hline
+Lanczos Bidiagonalization & $O(kmn)$ & Low & High (for sparse) & Large sparse matrices \\ \hline
+Power Iteration & $O(kmn)$ & Low & Moderate--High & Top-$k$ singular values \\ \hline
+Randomized SVD & $O(kmn)$ & Low & High (approximate) & Large dense data \\ \hline
+\end{tabular}
+}
+\end{table}
